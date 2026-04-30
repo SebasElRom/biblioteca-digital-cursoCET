@@ -88,7 +88,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* header más compacto */
+    
     header {
         flex-direction: column;
         text-align: center;
