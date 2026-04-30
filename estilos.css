@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 50px; 
+    background: #2b2222;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+}
+
+header img {
+    width: 90px;   
+    height: 90px;
+    object-fit: cover;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+aside {
+    background: #f4f4f4;
+    padding: 10px;
+}
+aside .titulo_filtro {
+    background: #df5050;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+.lista-filtros {
+    list-style: none; 
+    padding: 0;
+}
+
+.lista-filtros li {
+    background: #ddd;
+    margin: 5px 0;
+    padding: 8px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.libro {
+    background: #ddd;
+    padding: 2rem;
+    width: 30%;
+    text-align: center;
+}
+.libro img {
+    width: 100%;
+    max-width: 120px;
+}
+
+.libro p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+
+footer {
+    background: #2b2222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media (max-width: 600px) {
+
+    
+    .contenedor {
+        grid-template-columns: 1fr;
+    }
+
+    /* header más compacto */
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    header img {
+        width: 70px;
+        height: 70px;
+    }
+
+    
+    aside {
+        order: -1;
+    }
+
+    
+    .libro {
+        width: 100%;
+    }
+}
